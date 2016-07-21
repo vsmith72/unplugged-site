@@ -15,6 +15,9 @@ html {
   font-size: 1em;
   line-height: 1.4;
 }
+* {
+  box-sizing: border-box;
+}
 p {
   text-align: justify;
 }
@@ -127,6 +130,9 @@ nav {
   a {
     text-decoration: none;
   }
+  .subnav{
+    display: none;
+  }
 }
 
 /* Main Content ============================ */
@@ -136,12 +142,12 @@ nav {
   margin: auto;
 }
 figure {
-
-  img{
-    width: 100%;
-  }
+  width: 100%;
 }
 
+.sidebar-upcoming, .sidebar-faq{
+  display: none;
+}
 aside {
   input{
     width: 100%;
@@ -247,9 +253,54 @@ These examples override the primary ('mobile first') styles.
 Modify as content requires.
 ========================================================================== */
 //variables
-$tablet: "screen and (min-width: 678px) and (max-width: 939px)";
-$desktop: " screen and (min-width: 940px)";
+$tablet: "min-width: 678px";
+$desktop: "min-width: 940px";
 
+// tablet styles
+@media ($tablet) {
+  //header
+  #logo {
+    width: 38%;
+    float: left;
+  }
+  nav {
+    width: 58%;
+    float: right;
+    ul{
+    }
+    li {
+        display: inline-block;
+        padding: 0 5px;
+    }
+    .subnav {
+      display: block;
+    }
+  }
+  // main content
+  //featured item
+  .hero-area {
+    width: 100%;
+  }
+    .top-img {
+      width: 48%;
+      float: left;
+      padding-right: 5px;
+    }
+  .top-info {
+    width: 45%;
+    float: right;
+  }
+  //footer
+}
+
+// desktop styles
+@media ($desktop){
+  //header
+
+  // main content
+
+  //footer
+}
 
 /* ==========================================================================
 Print styles.
