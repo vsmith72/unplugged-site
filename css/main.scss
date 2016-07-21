@@ -15,9 +15,11 @@ html {
   font-size: 1em;
   line-height: 1.4;
 }
+
 * {
   box-sizing: border-box;
 }
+
 p {
   text-align: justify;
 }
@@ -103,9 +105,14 @@ Author's custom styles
 // variables
 $full-width: 100%;
 
+// mixins
 @mixin wiggle {
   padding: 0 2%;
 }
+@mixin center {
+  margin: 0 auto;
+}
+
 /* Header ============================ */
 header {
   width: $full-width;
@@ -114,7 +121,7 @@ header {
 #logo {
   width: 96%;
   @include wiggle;
-  margin: 0 auto;
+  @include center;
 }
 
 nav {
@@ -141,7 +148,7 @@ nav {
 #main-content{
   width: 96%;
   @include wiggle;
-  margin: auto;
+  @include center;
 }
 
 .top-story h2{
@@ -179,7 +186,7 @@ aside {
 
 footer {
   width: 70%;
-  margin: 0 auto;
+  @include center;
   img {
     display: block;
   }
@@ -323,7 +330,7 @@ $desktop: "min-width: 940px";
   }
   .detail-newsletter {
     width: 98%;
-    margin: auto;
+    @include center;
     input[type='email']{
     width: 60%;
     }
@@ -333,7 +340,7 @@ $desktop: "min-width: 940px";
   }
   .sidebar-upcoming, .sidebar-faq{
     display: block;
-    margin: auto;
+    @include center;
   }
   // news and reviews
   .feed {
@@ -349,7 +356,7 @@ $desktop: "min-width: 940px";
     clear: both;
     img{
       width: 30%;
-      margin: auto;
+      @include center;
     }
   }
 }
