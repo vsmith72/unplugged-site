@@ -132,6 +132,7 @@ nav {
   }
   .subnav{
     display: none;
+    text-align: left;
   }
 }
 
@@ -141,10 +142,10 @@ nav {
   @include wiggle;
   margin: auto;
 }
-figure {
-  width: 100%;
-}
 
+.top-story h2{
+  display: inline;
+}
 .sidebar-upcoming, .sidebar-faq{
   display: none;
 }
@@ -154,6 +155,14 @@ aside {
     margin-bottom: 1%;
   }
 }
+// news and reviews
+.feed-item img {
+  float: left;
+  padding-right: 10px;
+}
+.feed-item p {
+  display: none;
+}
 
 /* Footer ============================ */
 
@@ -161,7 +170,7 @@ footer {
   width: 70%;
   margin: 0 auto;
   img {
-
+    display: block;
   }
 }
 
@@ -253,20 +262,21 @@ These examples override the primary ('mobile first') styles.
 Modify as content requires.
 ========================================================================== */
 //variables
-$tablet: "min-width: 678px";
+$tablet: "min-width: 768px";
 $desktop: "min-width: 940px";
 
 // tablet styles
 @media ($tablet) {
   //header
   #logo {
-    width: 38%;
+    width: 40%;
     float: left;
   }
   nav {
-    width: 58%;
+    width: 60%;
     float: right;
     ul{
+      text-align: right;
     }
     li {
         display: inline-block;
@@ -282,15 +292,41 @@ $desktop: "min-width: 940px";
     width: 100%;
   }
     .top-img {
-      width: 48%;
+      width:50%;
       float: left;
-      padding-right: 5px;
+      padding-right: 10px;
     }
   .top-info {
-    width: 45%;
+    width: 50%;
     float: right;
   }
+
+  // sidebars
+  .sidebar {
+    clear:both;
+    width: 30%;
+    float: right;
+  }
+  .sidebar-upcoming, .sidebar-faq{
+    display: block;
+  }
+  // news and reviews
+  .feed {
+    width: 60%;
+    float: left;
+    .feed-image {
+      width: 35%;
+    }
+  }
+
   //footer
+  footer {
+    clear: both;
+    img{
+      width: 30%;
+      margin: auto;
+    }
+  }
 }
 
 // desktop styles
