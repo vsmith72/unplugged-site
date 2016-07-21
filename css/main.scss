@@ -15,6 +15,9 @@ html {
   font-size: 1em;
   line-height: 1.4;
 }
+p {
+  text-align: justify;
+}
 
 /*
 * Remove text-shadow in selection highlight:
@@ -25,12 +28,12 @@ html {
 */
 
 ::-moz-selection {
-  background: #b3d4fc;
+  background: rgba(153, 53, 239, 0.76);
   text-shadow: none;
 }
 
 ::selection {
-  background: #b3d4fc;
+  background: rgba(153, 53, 239, 0.76);
   text-shadow: none;
 }
 
@@ -96,24 +99,29 @@ Author's custom styles
 ========================================================================== */
 // variables
 $full-width: 100%;
+
+@mixin wiggle {
+  padding: 0 2%;
+}
 /* Header ============================ */
 header {
   width: $full-width;
 
 }
 #logo {
-  width: $full-width - 2%;
-  margin: auto;
+  width: 96%;
+  @include wiggle;
+  margin: 0 auto;
 }
 
 nav {
   width: $full-width;
   ul{
-    width: $full-width - 2%;
+    width: 96%;
+    @include wiggle;
   }
   li {
-    display: block;
-    text-decoration: none;
+    list-style: none;
     text-align: center;
   }
   a {
@@ -124,7 +132,7 @@ nav {
 /* Main Content ============================ */
 #main-content{
   width: 96%;
-  padding: 0 2%;
+  @include wiggle;
   margin: auto;
 }
 figure {
@@ -134,14 +142,21 @@ figure {
   }
 }
 
-#sidebar {
-
+aside {
+  input{
+    width: 100%;
+    margin-bottom: 1%;
+  }
 }
+
 /* Footer ============================ */
 
 footer {
   width: 70%;
-  margin: auto;
+  margin: 0 auto;
+  img {
+
+  }
 }
 
 
