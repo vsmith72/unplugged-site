@@ -128,6 +128,7 @@ nav {
     text-align: center;
   }
   a {
+    text-transform: uppercase;
     text-decoration: none;
   }
   .subnav{
@@ -146,6 +147,8 @@ nav {
 .top-story h2{
   display: inline;
 }
+
+
 .sidebar-upcoming, .sidebar-faq{
   display: none;
 }
@@ -154,6 +157,10 @@ aside {
     width: 100%;
     margin-bottom: 1%;
   }
+    .btn{
+      text-transform: uppercase;
+    }
+
 }
 // news and reviews
 .feed-item img {
@@ -162,6 +169,10 @@ aside {
 }
 .feed-item p {
   display: none;
+}
+.feed-type{
+  font-size: .75em;
+  text-transform: uppercase;
 }
 
 /* Footer ============================ */
@@ -282,9 +293,7 @@ $desktop: "min-width: 940px";
         display: inline-block;
         padding: 0 5px;
     }
-    .subnav {
-      display: block;
-    }
+
   }
   // main content
   //featured item
@@ -300,15 +309,31 @@ $desktop: "min-width: 940px";
     width: 50%;
     float: right;
   }
-
+// detail page meta
+  //meta
+  .feed-meta li{
+    display: inline-block;
+    list-style: none;
+  }
   // sidebars
   .sidebar {
     clear:both;
     width: 30%;
     float: right;
   }
+  .detail-newsletter {
+    width: 98%;
+    margin: auto;
+    input[type='email']{
+    width: 60%;
+    }
+    input[type='submit']{
+      width: 38%;
+    }
+  }
   .sidebar-upcoming, .sidebar-faq{
     display: block;
+    margin: auto;
   }
   // news and reviews
   .feed {
