@@ -306,6 +306,7 @@ $desktop: "min-width: 940px";
   //featured item
   .hero-area {
     width: 100%;
+    clear: both;
   }
     .top-img {
       width:50%;
@@ -353,6 +354,7 @@ $desktop: "min-width: 940px";
 
   //footer
   footer {
+    width: $full-width;
     clear: both;
     img{
       width: 30%;
@@ -364,10 +366,37 @@ $desktop: "min-width: 940px";
 // desktop styles
 @media ($desktop){
   //header
-
+  header {
+    width: 75%;
+    max-width: 1440px;
+    @include center;
+  }
   // main content
+  #main-content {
+    width: 75%;
+    max-width: 1440px;
+  }
 
+  //featured item
+  .hero-area {
+    width: 65%;
+    clear: none;
+    float: left;
+  }
+  .top-img {
+    width:$full-width;
+    padding-right: 10px;
+  }
+  .top-info {
+    width: $full-width;
+  }
+
+  // sidebars
+  .sidebar {
+    width: 30%;
+  }
   //footer
+
 }
 
 /* ==========================================================================

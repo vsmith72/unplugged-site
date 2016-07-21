@@ -264,53 +264,81 @@ Modify as content requires.
       padding: 0 5px; }
   /* line 307, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .hero-area {
-    width: 100%; }
-  /* line 310, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+    width: 100%;
+    clear: both; }
+  /* line 311, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .top-img {
     width: 50%;
     float: left;
     padding-right: 10px; }
-  /* line 315, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 316, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .top-info {
     width: 50%;
     float: right; }
-  /* line 321, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 322, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .feed-meta li {
     display: inline-block;
     list-style: none; }
-  /* line 326, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 327, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .sidebar {
     clear: both;
     width: 30%;
     float: right; }
-  /* line 331, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 332, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .detail-newsletter {
     width: 98%;
     margin: 0 auto; }
-    /* line 334, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+    /* line 335, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
     .detail-newsletter input[type='email'] {
       width: 60%; }
-    /* line 337, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+    /* line 338, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
     .detail-newsletter input[type='submit'] {
       width: 38%; }
-  /* line 341, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 342, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .sidebar-upcoming, .sidebar-faq {
     display: block;
     margin: 0 auto; }
-  /* line 346, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 347, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .feed {
     width: 60%;
     float: left; }
-    /* line 349, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+    /* line 350, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
     .feed .feed-image {
       width: 35%; }
-  /* line 355, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 356, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   footer {
+    width: 100%;
     clear: both; }
-    /* line 357, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+    /* line 359, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
     footer img {
       width: 30%;
       margin: 0 auto; } }
+
+@media (min-width: 940px) {
+  /* line 369, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  header {
+    width: 75%;
+    max-width: 1440px;
+    margin: 0 auto; }
+  /* line 375, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  #main-content {
+    width: 75%;
+    max-width: 1440px; }
+  /* line 381, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  .hero-area {
+    width: 65%;
+    clear: none;
+    float: left; }
+  /* line 386, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  .top-img {
+    width: 100%;
+    padding-right: 10px; }
+  /* line 390, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  .top-info {
+    width: 100%; }
+  /* line 395, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  .sidebar {
+    width: 30%; } }
 
 /* ==========================================================================
 Print styles.
@@ -318,7 +346,7 @@ Inlined to avoid the additional HTTP request:
 http://www.phpied.com/delay-loading-your-print-css/
 ========================================================================== */
 @media print {
-  /* line 384, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 413, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   *,
   *:before,
   *:after,
@@ -330,25 +358,25 @@ http://www.phpied.com/delay-loading-your-print-css/
     http://www.sanbeiji.com/archives/953 */
     box-shadow: none !important;
     text-shadow: none !important; }
-  /* line 393, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 422, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   a,
   a:visited {
     text-decoration: underline; }
-  /* line 397, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 426, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   a[href]:after {
     content: " (" attr(href) ")"; }
-  /* line 401, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 430, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")"; }
   /*
   * Don't show links that are fragment identifiers,
   * or use the `javascript:` pseudo protocol
   */
-  /* line 411, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 440, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: ""; }
-  /* line 416, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 445, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   pre,
   blockquote {
     border: 1px solid #999;
@@ -357,23 +385,23 @@ http://www.phpied.com/delay-loading-your-print-css/
   * Printing Tables:
   * http://css-discuss.incutio.com/wiki/Printing_Tables
   */
-  /* line 426, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 455, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   thead {
     display: table-header-group; }
-  /* line 431, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 460, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   tr,
   img {
     page-break-inside: avoid; }
-  /* line 435, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 464, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   img {
     max-width: 100% !important; }
-  /* line 441, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 470, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3; }
-  /* line 447, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 476, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   h2,
   h3 {
     page-break-after: avoid; } }
