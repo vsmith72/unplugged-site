@@ -16,14 +16,6 @@ html {
   line-height: 1.4;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-p {
-  text-align: justify;
-}
-
 /*
 * Remove text-shadow in selection highlight:
 * https://twitter.com/miketaylr/status/12228805301
@@ -103,34 +95,72 @@ Browser Upgrade Prompt
 Author's custom styles
 ========================================================================== */
 
-// variables
+// variables ==================================================================
 $full-width: 100%;
+$red: rgb(178, 30, 73);
+$purple: rgb(79, 30, 90);
+$gradient: (to right, $purple, $red);
 
-// mixins
+// mixins =====================================================================
 @mixin wiggle {
-  padding: 0 2%;
+  padding: 2%;
 }
 @mixin center {
   margin: 0 auto;
 }
 
-/* Header ============================ */
-header {
-  width: $full-width;
+// Global Styles
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient($gradient);
+}
+a {
 
 }
-#logo {
+
+h1, h2, h3, h4{
+
+}
+h1 {
+
+}
+h2{
+
+}
+h3 {
+
+}
+h4 {
+
+}
+p {
+  text-align: justify;
+}
+
+// Header =====================================================================
+
+header {
   width: 96%;
+
+}
+
+#logo {
+  width: 99%;
   @include wiggle;
   @include center;
 }
 
 nav {
   width: $full-width;
+
   ul{
     width: 96%;
-    @include wiggle;
+    @include center;
   }
+
   li {
     list-style: none;
     text-align: center;
@@ -145,22 +175,37 @@ nav {
   }
 }
 
-/* Main Content ============================ */
+// Main Content ===============================================================
 #main-content{
   width: 96%;
   @include wiggle;
   @include center;
+  margin-bottom: 20px;
+  background: white;
 }
 
-.top-story h2{
-  display: inline;
+// HOME PAGE AND REVIEWS PAGE =================================================
+
+// Featured News Item =========================================================
+.top-story {
+  width: $full-width;
+  .top-img {
+    width: $full-width;
+    margin: 0;
+  }
 }
 
+// Side Bar ===================================================================
 
+.sidebar {
+  width: $full-width;
+}
 .sidebar-upcoming, .sidebar-faq{
   display: none;
 }
+
 aside {
+
   input{
     width: 100%;
     margin-bottom: 1%;
@@ -170,36 +215,48 @@ aside {
     }
 
 }
-// news and reviews
-.feed-item img {
-  float: left;
-  padding-right: 10px;
+
+// New & Revies Feed Section ==================================================
+
+.feed {
+  width: $full-width;
+  p {
+    display: none;
+  }
 }
-.feed-item p {
-  display: none;
+
+.feed-item {
+  clear: both;
 }
+.feed-img {
+    width: 45%;
+    margin-right: 5%;
+    float: left;
+    margin: 0;
+}
+
 .feed-type{
   font-size: .75em;
   text-transform: uppercase;
 }
 
-/* Footer ============================ */
+// DETAILS PAGES ==============================================================
+
+.reviews-img, .news-img {
+  width: $full-width;
+  margin: 0;
+}
+
+// Footer =====================================================================
 
 footer {
   width: 70%;
   @include center;
-  img {
-    display: block;
-  }
 }
 
-
-
-
-
-
-
-
+#footer-logo {
+  width: $full-width;
+}
 
 /* ==========================================================================
 Helper classes
@@ -283,7 +340,13 @@ Modify as content requires.
 //variables
 $tablet: "min-width: 768px";
 $desktop: "min-width: 940px";
-
+// mixins
+@mixin clearfix {
+  &:after {
+    content: "";
+    clear: both;
+  }
+}
 // tablet styles
 @media ($tablet) {
   //header
@@ -304,6 +367,13 @@ $desktop: "min-width: 940px";
 
   }
   // main content
+  #main-content{
+    @include clearfix;
+    background: white;
+    height: inherit;
+
+    margin-bottom: 20px;
+  }
   //featured item
   .hero-area {
     width: 100%;
@@ -376,25 +446,29 @@ $desktop: "min-width: 940px";
   #main-content {
     width: 75%;
     max-width: 1440px;
+    margin-bottom: 20px;
+    background: white;
   }
 
   //featured item
-  .hero-area {
-    width: 65%;
-    clear: none;
+  .top-story {
+    width: 70%;
     float: left;
+
   }
   .top-img {
     width:$full-width;
-    padding-right: 10px;
   }
   .top-info {
     width: $full-width;
+    float: none;
   }
 
   // sidebars
   .sidebar {
+    clear: none;
     width: 30%;
+    float: right;
   }
   //footer
 
