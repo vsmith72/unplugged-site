@@ -122,7 +122,7 @@ a {
 }
 
 h1, h2, h3, h4{
-
+ font-family: 'Antic';
 }
 h1 {
 
@@ -137,6 +137,7 @@ h4 {
 
 }
 p {
+  font-family: 'Open Sans', sans-serif;
   text-align: justify;
 }
 
@@ -152,8 +153,17 @@ header {
   @include wiggle;
   @include center;
 }
-.top-nav i {
+.top-nav{
+  padding: 3% 0;
+  font-family: 'Antic';
+  font-size: 1.5rem;
+  letter-spacing: .15rem;
+  a{
+  color: white;
+  }
+i {
   display: none;
+}
 }
 nav {
   width: $full-width;
@@ -211,8 +221,14 @@ aside {
   input{
     width: 100%;
     margin-bottom: 1%;
+    padding: 2% 0;
   }
     .btn{
+
+      border: none;
+      background: linear-gradient($gradient);
+      font-size: 1.15rem;
+      color: white;
       text-transform: uppercase;
     }
 
@@ -232,7 +248,8 @@ aside {
 }
 .feed-img {
     width: 45%;
-    margin-right: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
     float: left;
     margin: 0;
 }
