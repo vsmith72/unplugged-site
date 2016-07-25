@@ -152,7 +152,9 @@ header {
   @include wiggle;
   @include center;
 }
-
+.top-nav i {
+  display: none;
+}
 nav {
   width: $full-width;
 
