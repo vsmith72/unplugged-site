@@ -1,57 +1,58 @@
-/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+//! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
-/*
-* What follows is the result of much research on cross-browser styling.
-* Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
-* Kroc Camen, and the H5BP dev community and team.
-*/
+//
+// What follows is the result of much research on cross-browser styling.
+// Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+// Kroc Camen, and the H5BP dev community and team.
+//
 
-/* ==========================================================================
-Base styles: opinionated defaults
-========================================================================== */
+// ==========================================================================
+// Base styles: opinionated defaults
+//========================================================================== */
+
+$grey-text: #222;
+$another-grey: #ccc;
+$black: #000;
+$selection-color: rgba(153, 53, 239, .76);
 
 html {
-  color: #222;
+  color: $grey-text;
   font-size: 1em;
   line-height: 1.4;
 }
 
-/*
-* Remove text-shadow in selection highlight:
-* https://twitter.com/miketaylr/status/12228805301
-*
-* These selection rule sets have to be separate.
-* Customize the background color to match your design.
-*/
-
-::-moz-selection {
-  background: rgba(153, 53, 239, 0.76);
-  text-shadow: none;
-}
+//*
+//* Remove text-shadow in selection highlight:
+//* https://twitter.com/miketaylr/status/12228805301
+//*
+//* These selection rule sets have to be separate.
+//* Customize the background color to match your design.
+//
 
 ::selection {
-  background: rgba(153, 53, 239, 0.76);
+  background: $selection-color;
   text-shadow: none;
 }
 
-/*
-* A better looking default horizontal rule
-*/
+
+//*
+//* A better looking default horizontal rule
+//
 
 hr {
+  border: 0;
+  border-top: 1px solid $another-grey;
   display: block;
   height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
   margin: 1em 0;
   padding: 0;
 }
 
-/*
-* Remove the gap between audio, canvas, iframes,
-* images, videos and the bottom of their containers:
-* https://github.com/h5bp/html5-boilerplate/issues/440
-*/
+//*
+//* Remove the gap between audio, canvas, iframes,
+//* images, videos and the bottom of their containers:
+//* https://github.com/h5bp/html5-boilerplate/issues/440
+//
 
 audio,
 canvas,
@@ -62,9 +63,9 @@ video {
   vertical-align: middle;
 }
 
-/*
-* Remove default fieldset styles.
-*/
+//*
+//* Remove default fieldset styles.
+//
 
 fieldset {
   border: 0;
@@ -72,34 +73,43 @@ fieldset {
   padding: 0;
 }
 
-/*
-* Allow only vertical resizing of textareas.
-*/
+//*
+//* Allow only vertical resizing of textareas.
+//
 
 textarea {
   resize: vertical;
 }
 
-/* ==========================================================================
-Browser Upgrade Prompt
-========================================================================== */
-
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+figure {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
 }
 
-/* ==========================================================================
-Author's custom styles
-========================================================================== */
+//* ==========================================================================
+//Browser Upgrade Prompt
+//========================================================================== */
+
+.browserupgrade {
+  background: $another-grey;
+  color: $black;
+  margin: .2em 0;
+  padding: .2em 0;
+}
+
+//* ==========================================================================
+//Author's custom styles
+//========================================================================== */
 
 // variables ==================================================================
 $full-width: 100%;
 $red: rgb(178, 30, 73);
 $purple: rgb(79, 30, 90);
 $gradient: (to right, $purple, $red);
+$grey: rgb(201, 201, 201);
+$white: #fff;
+
 
 // mixins =====================================================================
 @mixin wiggle {
@@ -107,6 +117,15 @@ $gradient: (to right, $purple, $red);
 }
 @mixin center {
   margin: 0 auto;
+}
+@mixin btmborder {
+  border-bottom: thin solid $grey;
+}
+@mixin tpborder {
+  border-top: thin solid $grey;
+}
+@mixin rtborder {
+  border-right: thin solid $grey;
 }
 
 // Global Styles
@@ -117,98 +136,119 @@ $gradient: (to right, $purple, $red);
 body {
   background: linear-gradient($gradient);
 }
-a {
 
-}
+// a { }
 
-h1, h2, h3, h4{
-  margin: 0;
- font-family: 'Antic';
-}
-h1 {
-
-}
-h2{
-
-}
-h3 {
-
-}
+h1,
+h2,
+h3,
 h4 {
-
+  font-family: 'Antic';
+  margin: 0;
+  padding: 2% 0;
 }
+
+// h1 { }
+
+// h2 { }
+
+// h3 { }
+
+// h4 { }
+
 p {
   font-family: 'Open Sans', sans-serif;
   text-align: justify;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+i {
+  padding-right: 5%;
 }
 
 // Header =====================================================================
 
 header {
   width: 96%;
-
 }
 
 #logo {
-  width: 99%;
   @include wiggle;
   @include center;
+  width: 99%;
 }
-.top-nav{
-  padding: 3% 0;
+
+.top-nav {
   font-family: 'Antic';
   font-size: 1.5rem;
   letter-spacing: .15rem;
-  a{
-  color: white;
-  }
-i {
-  display: none;
+  padding: 3% 0;
+
+  a {
+     color: $white;
+   }
+
+  i {
+     display: none;
+   }
 }
-}
+
 nav {
   width: $full-width;
 
-  ul{
-    width: 96%;
+  ul {
     @include center;
+    width: 96%;
   }
 
   li {
+    border-bottom: thin solid rgba(255, 255, 255, .5);
     list-style: none;
     text-align: center;
   }
-  a {
-    text-transform: uppercase;
-    text-decoration: none;
+  li:first-child {
+    border-top: thin solid rgba(255, 255, 255, .5);
   }
-  .subnav{
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .subnav {
     display: none;
     text-align: left;
   }
 }
 
 // Main Content ===============================================================
-#main-content{
-  width: 96%;
+#main-content {
   @include wiggle;
   @include center;
+  background: $white;
   padding-bottom: 10%;
-  background: white;
+  width: 96%;
 }
 
 // HOME PAGE AND REVIEWS PAGE =================================================
 
 // Featured News Item =========================================================
+.hero-area {
+
+}
 .top-story {
   width: $full-width;
-  .top-img {
-    width: $full-width;
-    margin: 0;
-  }
-  .top-info{
-    width: $full-width;
-  }
+
+    .top-img {
+      margin: 0;
+      width: $full-width;
+    }
+
+    .top-infov  {
+      width: $full-width;
+    }
 }
 
 // Side Bar ===================================================================
@@ -216,89 +256,198 @@ nav {
 .sidebar {
   width: $full-width;
 }
-.sidebar-upcoming, .sidebar-faq{
+
+.sidebar-upcoming,
+.sidebar-faq {
   display: none;
+  padding-bottom: 6%;
+}
+.sidebar-upcoming {
+  @include btmborder;
+}
+.newsletter {
+  @include btmborder;
+  @include tpborder;
+  padding-bottom: 6.75%;
 }
 
 aside {
 
-  input{
+  input {
     width: 100%;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
     padding: 2% 0;
   }
-    .btn{
 
-      border: none;
-      background: linear-gradient($gradient);
-      font-size: 1.15rem;
-      color: white;
-      text-transform: uppercase;
-    }
-
+  .btn {
+    width: 100%;
+    padding: 2% 0;
+    border: none;
+    background: linear-gradient($gradient);
+    font-size: 1.15rem;
+    color: #fff;
+    text-transform: uppercase;
+  }
 }
+
 
 // New & Revies Feed Section ==================================================
 
 .feed {
+  @include tpborder;
   width: $full-width;
+
   p {
     display: none;
+  }
+
+  h2 {
+    padding-bottom: 2%;
   }
 }
 
 .feed-item {
-  clear: both;
-  h3{
-    display: inline;
+  @include btmborder;
+  padding-bottom: 5%;
+
+  &:last-child{
+    border: none;
   }
-}
+  figure {
+    vertical-align: top;
+    display: inline-block;
+  }
+
+  h3 {
+    width: 65%;
+    display: inline-block;
+    padding-top: 0;
+    font-size: 1em;
+  }
+
+  h4 {
+    padding-bottom: 1%;
+    font-size: .75em;
+    text-transform: uppercase;
+  }
+  p{
+    margin-top: 0;
+  }
+
+
 .feed-img {
-    width: 25%;
-    padding-right: 5%;
-    padding-bottom: 5%;
-    float: left;
+  width: 30%;
 }
 
-.feed-type{
-  font-size: .75em;
-  text-transform: uppercase;
 }
 
 // DETAILS PAGES ==============================================================
 
-.reviews-img, .news-img {
-  width: $full-width;
+.reviews-img,
+.news-img {
   margin: 0;
+  width: $full-width;
+}
+ul.feed-meta {
+  padding-left: 0;
+}
+.feed-meta li {
+    display: inline-block;
+    list-style: none;
+    }
+
+.byline {
+  text-align: justify;
+}
+.detail-content{
+  @include btmborder;
 }
 
+// ABOUT PAGE ================================ */
+.map-container {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+.mission{
+
+}
+.team{
+
+}
+.team-member{
+  @include btmborder;
+  padding: 5%;
+  &:last-child{
+    border: none;
+  }
+}
+.team-img{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40%;
+  padding-bottom: 40%;
+  float: left;
+  margin-right: 20px;
+  border: thin solid #ccc;
+}
+.team-name{
+
+}
+.team-title{
+  margin: 0;
+  font-style: italic;
+
+}
+.team-description{
+  display: none;
+}
+
+#team-img-01 {
+  background-image:url('../img/team-jack.png');
+}
+#team-img-02 {
+  background-image:url('../img/team-lana.png');
+}
+#team-img-03 {
+  background-image:url('../img/team-willow.png');
+}
 // Footer =====================================================================
 
 footer {
-  width: 70%;
   @include center;
+  width: 70%;
 }
-
 .footer-logo {
   width: $full-width;
+  padding-top: 5%;
 }
 
-/* ==========================================================================
-Helper classes
-========================================================================== */
+//* ==========================================================================
+//Helper classes
+//========================================================================== */
 
-/*
-* Hide visually and from screen readers
-*/
+//*
+//* Hide visually and from screen readers
+//*/
 
 .hidden {
   display: none !important;
 }
 
-/*
-* Hide only visually, but have it available for screen readers:
-* http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
-*/
+//*
+//* Hide only visually, but have it available for screen readers:
+//* http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+//
 
 .visuallyhidden {
   border: 0;
@@ -311,11 +460,11 @@ Helper classes
   width: 1px;
 }
 
-/*
-* Extends the .visuallyhidden class to allow the element
-* to be focusable when navigated to via the keyboard:
-* https://www.drupal.org/node/897638
-*/
+//*
+//* Extends the .visuallyhidden class to allow the element
+//* to be focusable when navigated to via the keyboard:
+//* https://www.drupal.org/node/897638
+//
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
@@ -327,25 +476,25 @@ Helper classes
   width: auto;
 }
 
-/*
-* Hide visually and from screen readers, but maintain layout
-*/
+//*
+//* Hide visually and from screen readers, but maintain layout
+//
 
 .invisible {
   visibility: hidden;
 }
 
-/*
-* Clearfix: contain floats
-*
-* For modern browsers
-* 1. The space content is one way to avoid an Opera bug when the
-*    `contenteditable` attribute is included anywhere else in the document.
-*    Otherwise it causes space to appear at the top and bottom of elements
-*    that receive the `clearfix` class.
-* 2. The use of `table` rather than `block` is only necessary if using
-*    `:before` to contain the top-margins of child elements.
-*/
+//*
+//* Clearfix: contain floats
+//*
+//* For modern browsers
+//* 1. The space content is one way to avoid an Opera bug when the
+//*    `contenteditable` attribute is included anywhere else in the document.
+//*    Otherwise it causes space to appear at the top and bottom of elements
+//*    that receive the `clearfix` class.
+//* 2. The use of `table` rather than `block` is only necessary if using
+//*    `:before` to contain the top-margins of child elements.
+//
 
 .clearfix:before,
 .clearfix:after {
@@ -357,11 +506,11 @@ Helper classes
   clear: both;
 }
 
-/* ==========================================================================
-EXAMPLE Media Queries for Responsive Design.
-These examples override the primary ('mobile first') styles.
-Modify as content requires.
-========================================================================== */
+//* ==========================================================================
+//EXAMPLE Media Queries for Responsive Design.
+//These examples override the primary ('mobile first') styles.
+//Modify as content requires.
+//========================================================================== */
 //variables
 $tablet: "min-width: 768px";
 $desktop: "min-width: 940px";
@@ -373,127 +522,221 @@ $desktop: "min-width: 940px";
     width: 40%;
     float: left;
   }
+
   .top-nav {
     width: 60%;
     float: right;
-    ul{
-      text-align: right;
+    text-align: right;
+    .vertical-center {
+      vertical-align: middle;
     }
+
     li {
+        border: none;
         display: inline-block;
         padding: 0 5px;
+      &:first-child {
+        border: none;
+      }
     }
 
   }
+
   .clear {
     clear:both;
   }
+
   //featured item
   .hero-area {
     padding-bottom: 5%;
-  .top-story {
-    width: 100%;
-  }
-  .top-img{
-    width: 50%;
-    float: left;
-  }
+    .top-story {
+      width: 100%;
+    }
+    .top-img{
+      width: 50%;
+      float: left;
+    }
 
-  .top-info{
-    width: 50%;
-    float: right;
-    padding-left: 2%;
-    h1{
-      font-size: 1.85em;
+    .top-info{
+      width: 50%;
+      float: right;
+      padding-left: 2%;
+        h1 {
+          font-size: 1.85em;
+      }
     }
   }
-  }
-// detail page meta
-  //meta
-  .feed-meta li{
-    display: inline-block;
-    list-style: none;
-  }
+
+
   // sidebars
   .sidebar {
-    width: 30%;
+    width: 40%;
     float: right;
   }
 
   .detail-newsletter {
-    width: 98%;
-    @include center;
-    input[type='email']{
+    input[type='email'] {
     width: 60%;
     }
-    input[type='submit']{
+    input[type='submit'] {
       width: 38%;
     }
   }
-  .sidebar-upcoming, .sidebar-faq{
+  .newsletter,
+  .sidebar-upcoming,
+  .sidebar-faq {
     display: block;
-    @include center;
+    padding-left: 3%;
   }
+
   // news and reviews
   .feed {
+
+    border-right: thin solid $grey;
     width: 60%;
     float: left;
-    .feed-image {
-      width: 35%;
+    .feed-img {
+      width: 45%;
+    }
+    h3 {
+      width: 50%;
     }
   }
 
   //footer
-
-      img{
-      width: 30%;
+  footer{
+    width: 90%;
+   text-align: center;
+  }
+  .footer-logo {
+    @include center;
+    width: 40%;
     }
+}
 
-// desktop styles
+// desktop styles =============================================================
 @media ($desktop){
   //header
   header {
-    width: 99%;
+    width: $full-width;
     max-width: 1440px;
     @include center;
   }
+  .top-nav {
+    li {
+      padding-right: 2%;
+    }
+    i {
+      display: initial;
+      color: #fff;
+    }
+    a {
+      color: #fff;
+      &:hover {
+        text-shadow: 0 0 3px yellow, 0 0 5px $red;
+      }
+    }
+  }
   // main content
   #main-content {
-    width: 99%;
+    width: 90%;
     max-width: 1440px;
     margin-bottom: 20px;
-    background: white;
+    background: #fff;
   }
 
   //featured item
-  .top-story {
-    width: 70%;
-    float: left;
-
+  .hero-area {
+    display: inline;
+    .top-story {
+      @include rtborder;
+      display: inline;
+      width: 70%;
+      padding-right: 2%;
+      float: left;
+      margin: 0;
+    }
+    .top-img {
+      width: $full-width;
+    }
+    .top-info {
+      display: inline-block;
+      width: 95%;
+      float: none;
+      padding: 0;
+    }
   }
-  .top-img {
-    width:$full-width;
-  }
-  .top-info {
-    width: $full-width;
-    float: none;
+  .top-img img {
+    max-width: 620px;
   }
 
   // sidebars
+  .none {
+    clear: none;
+  }
   .sidebar {
     clear: none;
     width: 30%;
     float: right;
   }
-  //footer
+  .btn:hover {
+    box-shadow: 0px 7px 5px 0px rgba(207,207,209,1);
+  }
+  .newsletter {
+    border-top: none;
+  }
+  // Feed Items ===============================================================
+  .feed {
+    width: $full-width;
+    border-right: none;
+  }
+  .feed-item{
+    width: $full-width;
+    height: auto;
+    span {
+      width: 75%;
+      float: right;
+      &:after{
+        clear: right;
+      }
+      p {
+        display: inline-block;
+      }
+      h3 {
+        width: $full-width;
+        display: inline-block;
+        font-size: 1.45em;
+      }
+    }
+    figure {
+      display: inline-block;
+      padding: 0;
+    }
+    .feed-img {
+      width: $full-width;
+      max-width: 194px;
+      }
+  }
 
+// About Page ===========================================================
+  .team-title{
+    margin-bottom: 2%;
+
+  }
+  .team-description{
+    display: initial;
+  }
+  //footer
+  .footer-logo img{
+    width: 30%;
+  }
 }
 
-/* ==========================================================================
-Print styles.
-Inlined to avoid the additional HTTP request:
-http://www.phpied.com/delay-loading-your-print-css/
-========================================================================== */
+//* ==========================================================================
+//Print styles.
+//Inlined to avoid the additional HTTP request:
+//http://www.phpied.com/delay-loading-your-print-css/
+//========================================================================== */
 
 @media print {
   *,
@@ -537,10 +780,10 @@ http://www.phpied.com/delay-loading-your-print-css/
     page-break-inside: avoid;
   }
 
-  /*
-  * Printing Tables:
-  * http://css-discuss.incutio.com/wiki/Printing_Tables
-  */
+  //*
+  //* Printing Tables:
+  //* http://css-discuss.incutio.com/wiki/Printing_Tables
+  //*/
 
   thead {
     display: table-header-group;
@@ -562,8 +805,8 @@ http://www.phpied.com/delay-loading-your-print-css/
     widows: 3;
   }
 
-  h2,
-  h3 {
+h2,
+h3 {
     page-break-after: avoid;
   }
 }
