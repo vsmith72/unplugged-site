@@ -127,6 +127,9 @@ $white: #fff;
 @mixin rtborder {
   border-right: thin solid $grey;
 }
+@mixin img-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 // Global Styles
 * {
@@ -137,7 +140,19 @@ body {
   background: linear-gradient($gradient);
 }
 
-// a { }
+a {
+  text-decoration: none;
+  color: $purple;
+  &:visited {
+    color: $purple;
+  }
+  &:hover {
+
+  }
+  &:active {
+
+  }
+}
 
 h1,
 h2,
@@ -165,7 +180,10 @@ img{
   height: auto;
 }
 i {
-  padding-right: 5%;
+  padding-right: 10px;
+}
+li {
+  list-style: none;
 }
 
 // Header =====================================================================
@@ -180,48 +198,46 @@ header {
   width: 99%;
 }
 
-.top-nav {
-  font-family: 'Antic';
-  font-size: 1.5rem;
-  letter-spacing: .15rem;
-  padding: 3% 0;
 
-  a {
-     color: $white;
-   }
-
-  i {
-     display: none;
-   }
-}
-
+// code from 206 master
 nav {
-  width: $full-width;
-
+  width: 100%;
+  font-family: 'Antic';
+  font-size: 1.25rem;
+  letter-spacing: .15rem;
   ul {
     @include center;
     width: 96%;
+    margin: auto;
+    list-style:none;
+    padding:0px;
+    padding-bottom: 5%;
+    li {
+      @include btmborder;
+      text-align:center;
+      padding:15px 0;
+      &:first-child {
+        border-top: thin solid rgba(255, 255, 255, .5);
+      }
+      a {
+        font-size:1.125em;
+        text-transform:uppercase;
+        color:$white;
+        &:visited {
+          color: $white;
+        }
+      }
+      i {
+        display: none;
+      }
+    }
   }
-
-  li {
-    border-bottom: thin solid rgba(255, 255, 255, .5);
-    list-style: none;
-    text-align: center;
-  }
-  li:first-child {
-    border-top: thin solid rgba(255, 255, 255, .5);
-  }
-
-  a {
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-
   .subnav {
-    display: none;
-    text-align: left;
+    display:none;
   }
 }
+// end master
+
 
 // Main Content ===============================================================
 #main-content {
@@ -242,6 +258,7 @@ nav {
   width: $full-width;
 
     .top-img {
+      @include img-shadow;
       margin: 0;
       width: $full-width;
     }
@@ -336,6 +353,7 @@ aside {
 
 
 .feed-img {
+  @include img-shadow;
   width: 30%;
 }
 
@@ -515,38 +533,39 @@ footer {
 $tablet: "min-width: 768px";
 $desktop: "min-width: 940px";
 
-// tablet styles
+// Tablet Styles ==============================================================
+
 @media ($tablet) {
-  //header
+
+  // Header =================
   #logo {
     width: 40%;
     float: left;
   }
 
-  .top-nav {
+  // Navigation =============
+  nav {
     width: 60%;
-    float: right;
-    text-align: right;
-    .vertical-center {
-      vertical-align: middle;
-    }
-
-    li {
-        border: none;
-        display: inline-block;
-        padding: 0 5px;
+    float:right;
+    ul li {
+      display:block;
+      float:right;
+      padding:0 2%;
+      border:none;
+      line-height:2em;
+      position:relative;
+      top:16px;
       &:first-child {
         border: none;
       }
     }
-
   }
 
   .clear {
     clear:both;
   }
 
-  //featured item
+  // Featured Item ==========
   .hero-area {
     padding-bottom: 5%;
     .top-story {
@@ -568,7 +587,7 @@ $desktop: "min-width: 940px";
   }
 
 
-  // sidebars
+  // Sidebars ===============
   .sidebar {
     width: 40%;
     float: right;
@@ -606,7 +625,7 @@ $desktop: "min-width: 940px";
   //footer
   footer{
     width: 90%;
-   text-align: center;
+    text-align: center;
   }
   .footer-logo {
     @include center;
@@ -616,15 +635,27 @@ $desktop: "min-width: 940px";
 
 // desktop styles =============================================================
 @media ($desktop){
+  //global
+  a {
+    color: $purple;
+    &:hover {
+      text-shadow: 0 0 3px $red, 0 0 5px $white;
+    }
+    &:active {
+
+    }
+  }
   //header
   header {
     width: $full-width;
     max-width: 1440px;
     @include center;
   }
-  .top-nav {
+
+  nav {
+    width: 60%;
     li {
-      padding-right: 2%;
+      top:28px;
     }
     i {
       display: initial;
@@ -640,7 +671,7 @@ $desktop: "min-width: 940px";
   // main content
   #main-content {
     width: 90%;
-    max-width: 1440px;
+    max-width: 1024px;
     margin-bottom: 20px;
     background: #fff;
   }
@@ -666,9 +697,7 @@ $desktop: "min-width: 940px";
       padding: 0;
     }
   }
-  .top-img img {
-    max-width: 620px;
-  }
+
 
   // sidebars
   .none {
