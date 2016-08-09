@@ -50,23 +50,23 @@ figure {
   margin: .2em 0;
   padding: .2em 0; }
 
-/* line 132, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 135, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 * {
   box-sizing: border-box; }
 
-/* line 136, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 139, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 body {
   background: linear-gradient(to right, #4f1e5a, #b21e49); }
 
-/* line 140, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 143, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 a {
   text-decoration: none;
   color: #4f1e5a; }
-  /* line 143, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 146, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   a:visited {
     color: #4f1e5a; }
 
-/* line 157, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 160, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 h1,
 h2,
 h3,
@@ -75,68 +75,72 @@ h4 {
   margin: 0;
   padding: 2% 0; }
 
-/* line 171, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 174, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 p {
   font-family: 'Open Sans', sans-serif;
   text-align: justify; }
 
-/* line 175, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 178, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 img {
   width: 100%;
   height: auto; }
 
-/* line 179, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
-i {
-  padding-right: 15px; }
-
 /* line 182, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+i {
+  padding-right: 10px; }
+
+/* line 185, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 li {
   list-style: none; }
 
-/* line 188, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 191, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 header {
   width: 96%; }
 
-/* line 192, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 195, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 #logo {
   padding: 2%;
   margin: 0 auto;
   width: 99%; }
 
-/* line 200, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 203, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 nav {
   width: 100%;
   font-family: 'Antic';
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   letter-spacing: .15rem; }
-  /* line 205, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 208, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   nav ul {
     margin: 0 auto;
     width: 96%;
     margin: auto;
     list-style: none;
-    padding: 0px; }
-    /* line 211, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+    padding: 0px;
+    padding-bottom: 5%; }
+    /* line 215, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
     nav ul li {
       border-bottom: thin solid #c9c9c9;
       text-align: center;
       padding: 15px 0; }
-      /* line 215, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+      /* line 219, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
       nav ul li:first-child {
         border-top: thin solid rgba(255, 255, 255, 0.5); }
-      /* line 218, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+      /* line 222, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
       nav ul li a {
         font-size: 1.125em;
         text-transform: uppercase;
         color: #fff; }
-      /* line 223, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+        /* line 226, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+        nav ul li a:visited {
+          color: #fff; }
+      /* line 230, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
       nav ul li i {
         display: none; }
-  /* line 228, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 235, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   nav .subnav {
     display: none; }
 
-/* line 236, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 243, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 #main-content {
   padding: 2%;
   margin: 0 auto;
@@ -144,44 +148,45 @@ nav {
   padding-bottom: 10%;
   width: 96%; }
 
-/* line 250, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 257, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 .top-story {
   width: 100%; }
-  /* line 253, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 260, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .top-story .top-img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 0;
     width: 100%; }
-  /* line 258, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 266, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .top-story .top-infov {
     width: 100%; }
 
-/* line 265, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 273, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 .sidebar {
   width: 100%; }
 
-/* line 270, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 278, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 .sidebar-upcoming,
 .sidebar-faq {
   display: none;
   padding-bottom: 6%; }
 
-/* line 274, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 282, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 .sidebar-upcoming {
   border-bottom: thin solid #c9c9c9; }
 
-/* line 277, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 285, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 .newsletter {
   border-bottom: thin solid #c9c9c9;
   border-top: thin solid #c9c9c9;
   padding-bottom: 6.75%; }
 
-/* line 285, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 293, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 aside input {
   width: 100%;
   margin-bottom: 2%;
   padding: 2% 0; }
 
-/* line 291, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 299, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 aside .btn {
   width: 100%;
   padding: 2% 0;
@@ -191,76 +196,77 @@ aside .btn {
   color: #fff;
   text-transform: uppercase; }
 
-/* line 305, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 313, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 .feed {
   border-top: thin solid #c9c9c9;
   width: 100%; }
-  /* line 309, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 317, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .feed p {
     display: none; }
-  /* line 313, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 321, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .feed h2 {
     padding-bottom: 2%; }
 
-/* line 318, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 326, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 .feed-item {
   border-bottom: thin solid #c9c9c9;
   padding-bottom: 5%; }
-  /* line 322, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 330, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .feed-item:last-child {
     border: none; }
-  /* line 325, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 333, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .feed-item figure {
     vertical-align: top;
     display: inline-block; }
-  /* line 330, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 338, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .feed-item h3 {
     width: 65%;
     display: inline-block;
     padding-top: 0;
     font-size: 1em; }
-  /* line 337, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 345, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .feed-item h4 {
     padding-bottom: 1%;
     font-size: .75em;
     text-transform: uppercase; }
-  /* line 342, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 350, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .feed-item p {
     margin-top: 0; }
-  /* line 347, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 355, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .feed-item .feed-img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 30%; }
 
-/* line 356, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 365, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 .reviews-img,
 .news-img {
   margin: 0;
   width: 100%; }
 
-/* line 360, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 369, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 ul.feed-meta {
   padding-left: 0; }
 
-/* line 363, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 372, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 .feed-meta li {
   display: inline-block;
   list-style: none; }
 
-/* line 368, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 377, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 .byline {
   text-align: justify; }
 
-/* line 371, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 380, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 .detail-content {
   border-bottom: thin solid #c9c9c9; }
 
-/* line 376, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 385, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 .map-container {
   position: relative;
   padding-bottom: 75%;
   height: 0;
   overflow: hidden; }
-  /* line 381, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 390, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .map-container iframe {
     position: absolute;
     top: 0;
@@ -268,15 +274,15 @@ ul.feed-meta {
     width: 100%;
     height: 100%; }
 
-/* line 395, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 404, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 .team-member {
   border-bottom: thin solid #c9c9c9;
   padding: 5%; }
-  /* line 398, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 407, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .team-member:last-child {
     border: none; }
 
-/* line 402, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 411, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 .team-img {
   background-position: center;
   background-size: cover;
@@ -287,42 +293,42 @@ ul.feed-meta {
   margin-right: 20px;
   border: thin solid #ccc; }
 
-/* line 415, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 424, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 .team-title {
   margin: 0;
   font-style: italic; }
 
-/* line 420, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 429, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 .team-description {
   display: none; }
 
-/* line 424, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 433, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 #team-img-01 {
   background-image: url("../img/team-jack.png"); }
 
-/* line 427, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 436, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 #team-img-02 {
   background-image: url("../img/team-lana.png"); }
 
-/* line 430, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 439, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 #team-img-03 {
   background-image: url("../img/team-willow.png"); }
 
-/* line 435, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 444, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 footer {
   margin: 0 auto;
   width: 70%; }
 
-/* line 439, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 448, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 .footer-logo {
   width: 100%;
   padding-top: 5%; }
 
-/* line 452, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 461, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 .hidden {
   display: none !important; }
 
-/* line 461, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 470, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -333,7 +339,7 @@ footer {
   position: absolute;
   width: 1px; }
 
-/* line 479, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 488, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -343,11 +349,11 @@ footer {
   position: static;
   width: auto; }
 
-/* line 492, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 501, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 .invisible {
   visibility: hidden; }
 
-/* line 509, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 518, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -355,126 +361,126 @@ footer {
   display: table;
   /* 2 */ }
 
-/* line 514, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+/* line 523, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
 .clearfix:after {
   clear: both; }
 
 @media (min-width: 768px) {
-  /* line 532, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 541, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   #logo {
     width: 40%;
     float: left; }
-  /* line 538, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 547, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   nav {
     width: 60%;
     float: right; }
-    /* line 541, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+    /* line 550, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
     nav ul li {
       display: block;
       float: right;
-      padding: 0 4%;
+      padding: 0 2%;
       border: none;
       line-height: 2em;
       position: relative;
       top: 16px; }
-      /* line 549, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+      /* line 558, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
       nav ul li:first-child {
         border: none; }
-  /* line 555, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 564, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .clear {
     clear: both; }
-  /* line 560, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 569, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .hero-area {
     padding-bottom: 5%; }
-    /* line 562, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+    /* line 571, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
     .hero-area .top-story {
       width: 100%; }
-    /* line 565, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+    /* line 574, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
     .hero-area .top-img {
       width: 50%;
       float: left; }
-    /* line 570, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+    /* line 579, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
     .hero-area .top-info {
       width: 50%;
       float: right;
       padding-left: 2%; }
-      /* line 574, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+      /* line 583, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
       .hero-area .top-info h1 {
         font-size: 1.85em; }
-  /* line 582, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 591, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .sidebar {
     width: 40%;
     float: right; }
-  /* line 588, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 597, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .detail-newsletter input[type='email'] {
     width: 60%; }
-  /* line 591, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 600, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .detail-newsletter input[type='submit'] {
     width: 38%; }
-  /* line 597, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 606, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .newsletter,
   .sidebar-upcoming,
   .sidebar-faq {
     display: block;
     padding-left: 3%; }
-  /* line 603, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 612, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .feed {
     border-right: thin solid #c9c9c9;
     width: 60%;
     float: left; }
-    /* line 608, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+    /* line 617, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
     .feed .feed-img {
       width: 45%; }
-    /* line 611, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+    /* line 620, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
     .feed h3 {
       width: 50%; }
-  /* line 617, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 626, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   footer {
     width: 90%;
     text-align: center; }
-  /* line 621, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 630, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .footer-logo {
     margin: 0 auto;
     width: 40%; } }
 
 @media (min-width: 940px) {
-  /* line 630, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 639, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   a {
     color: #4f1e5a; }
-    /* line 632, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+    /* line 641, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
     a:hover {
       text-shadow: 0 0 3px #b21e49, 0 0 5px #fff; }
-  /* line 640, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 649, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   header {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto; }
-  /* line 646, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 655, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   nav {
     width: 60%; }
-    /* line 648, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+    /* line 657, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
     nav li {
       top: 28px; }
-    /* line 651, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+    /* line 660, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
     nav i {
       display: initial;
       color: #fff; }
-    /* line 655, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+    /* line 664, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
     nav a {
       color: #fff; }
-      /* line 657, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+      /* line 666, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
       nav a:hover {
         text-shadow: 0 0 3px yellow, 0 0 5px #b21e49; }
-  /* line 663, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 672, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   #main-content {
     width: 90%;
-    max-width: 1440px;
+    max-width: 1024px;
     margin-bottom: 20px;
     background: #fff; }
-  /* line 671, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 680, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .hero-area {
     display: inline; }
-    /* line 673, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+    /* line 682, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
     .hero-area .top-story {
       border-right: thin solid #c9c9c9;
       display: inline;
@@ -482,75 +488,72 @@ footer {
       padding-right: 2%;
       float: left;
       margin: 0; }
-    /* line 681, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+    /* line 690, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
     .hero-area .top-img {
       width: 100%; }
-    /* line 684, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+    /* line 693, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
     .hero-area .top-info {
       display: inline-block;
       width: 95%;
       float: none;
       padding: 0; }
-  /* line 691, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
-  .top-img img {
-    max-width: 620px; }
-  /* line 696, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 703, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .none {
     clear: none; }
-  /* line 699, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 706, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .sidebar {
     clear: none;
     width: 30%;
     float: right; }
-  /* line 704, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 711, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .btn:hover {
     box-shadow: 0px 7px 5px 0px #cfcfd1; }
-  /* line 707, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 714, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .newsletter {
     border-top: none; }
-  /* line 711, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 718, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .feed {
     width: 100%;
     border-right: none; }
-  /* line 715, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 722, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .feed-item {
     width: 100%;
     height: auto; }
-    /* line 718, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+    /* line 725, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
     .feed-item span {
       width: 75%;
       float: right; }
-      /* line 721, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+      /* line 728, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
       .feed-item span:after {
         clear: right; }
-      /* line 724, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+      /* line 731, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
       .feed-item span p {
         display: inline-block; }
-      /* line 727, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+      /* line 734, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
       .feed-item span h3 {
         width: 100%;
         display: inline-block;
         font-size: 1.45em; }
-    /* line 733, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+    /* line 740, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
     .feed-item figure {
       display: inline-block;
       padding: 0; }
-    /* line 737, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+    /* line 744, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
     .feed-item .feed-img {
       width: 100%;
       max-width: 194px; }
-  /* line 744, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 751, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .team-title {
     margin-bottom: 2%; }
-  /* line 748, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 755, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .team-description {
     display: initial; }
-  /* line 752, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 759, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   .footer-logo img {
     width: 30%; } }
 
 @media print {
-  /* line 768, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 775, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   *,
   *:before,
   *:after,
@@ -562,46 +565,46 @@ footer {
     http://www.sanbeiji.com/archives/953 */
     box-shadow: none !important;
     text-shadow: none !important; }
-  /* line 777, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 784, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   a,
   a:visited {
     text-decoration: underline; }
-  /* line 781, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 788, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   a[href]:after {
     content: " (" attr(href) ")"; }
-  /* line 785, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 792, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")"; }
   /*
   * Don't show links that are fragment identifiers,
   * or use the `javascript:` pseudo protocol
   */
-  /* line 795, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 802, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: ""; }
-  /* line 800, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 807, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid; }
-  /* line 810, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 817, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   thead {
     display: table-header-group; }
-  /* line 815, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 822, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   tr,
   img {
     page-break-inside: avoid; }
-  /* line 819, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 826, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   img {
     max-width: 100% !important; }
-  /* line 825, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 832, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3; }
-  /* line 831, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
+  /* line 838, C:/Users/Vanessa/Desktop/Skillcrush/RWD/206/Week 2/1-Mon/unplugged-site/css/main.scss */
   h2,
   h3 {
     page-break-after: avoid; } }
